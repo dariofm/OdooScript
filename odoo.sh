@@ -9,7 +9,7 @@ mkdir /var/log/odoo_3
 sudo chown -R odoo: /var/log/odoo_3
 
 echo -e "\n---- Baixando core do Servidor Odoo ----"
-sudo git clone https://www.github.com/odoo_3/odoo --depth 1 --branch 11.0 --single-branch /opt/odoo_3/core
+sudo git clone https://www.github.com/odoo/odoo --depth 1 --branch 11.0 --single-branch /opt/odoo_3/core
 sudo git clone https://github.com/Trust-Code/odoo-brasil.git --depth 1 --branch 11.0 --single-branch /opt/odoo_3/modulos/localbr
 sudo git clone https://github.com/adax-technology/addons-adax.git --branch 11.0 /opt/odoo_3/modulos/backend
 echo "\n---- Criando arquivo de configuração do Servidor ADAX ERP ---"
@@ -46,7 +46,7 @@ Contact=contato@adaxtechnology.com
 Type=simple
 User=odoo
 PIDFile=/var/run/odoo_3.pid
-ExecStart=/opt/odoo_3/core/odoo-bin -c /etc/odoo.conf
+ExecStart=/opt/odoo_3/core/odoo-bin -c /etc/odoo_3.conf
 Restart=on-abort
 
 [Install]
