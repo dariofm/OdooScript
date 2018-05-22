@@ -1,4 +1,4 @@
-
+#as
 
 sudo apt-get install python-pip libxml2-dev libxslt-dev libevent-dev libsasl2-dev libldap2-dev libpq-dev libjpeg-dev nodejs npm
 
